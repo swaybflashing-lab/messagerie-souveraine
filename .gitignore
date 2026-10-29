@@ -1,0 +1,12 @@
+# Secrets et mots de passe
+.env
+*.key
+
+# Données générées par les conteneurs
+pgdata/
+caddy_data/
+caddy_config/
+
+# Synapse : on garde seulement un modèle, jamais la vraie config
+synapse-data/*
+!synapse-data/homeserver.example.yaml
